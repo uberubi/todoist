@@ -30,6 +30,7 @@ export const Sidebar = () => {
               setActive("inbox");
               setSelectedProject("INBOX");
             }}
+            aria-label="Show inbox tasks"
             role="button"
             tabIndex={0}
           >
@@ -52,6 +53,7 @@ export const Sidebar = () => {
               setActive("today");
               setSelectedProject("TODAY");
             }}
+            aria-label="Today tasks"
             role="button"
             tabIndex={0}
           >
@@ -74,6 +76,7 @@ export const Sidebar = () => {
               setActive("next_7");
               setSelectedProject("NEXT_7");
             }}
+            aria-label="Next 7 days tasks"
             role="button"
             tabIndex={0}
           >
@@ -88,6 +91,7 @@ export const Sidebar = () => {
         className="sidebar__middle"
         onClick={() => setShowProjects(!showProjects)}
         onKeyDown={() => setShowProjects(!showProjects)}
+        aria-label="Show/hide projects"
         role="button"
         tabIndex={0}
       >
